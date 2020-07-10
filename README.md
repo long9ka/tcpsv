@@ -36,3 +36,9 @@ int main() {
   }
   ```
 # Vài hình ảnh demo
+![](/images/pc_index.png)
+![](/images/pc_info.png)
+![](/images/pc_404.png)
+![](/images/mb_index.png =100x20)
+![](/images/mb_info.png =100x20)
+![](/images/mb_404.png =100x20)
