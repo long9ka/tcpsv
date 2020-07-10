@@ -217,7 +217,6 @@ namespace serv {
   void _accept() {
     while (1) {
   	  if ((clfd = accept(svfd, 0, 0)) > 0) {
-        std::cout << clfd << '\n';
         std::thread t(conn);
         t.join();
         close(clfd); 

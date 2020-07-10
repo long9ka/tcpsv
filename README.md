@@ -1,3 +1,4 @@
+
 # Chạy Chương trình
 * `make install` để biên dịch
 * `sudo make run` để chạy (bind yêu cầu phải cấp quyền, nên có sudo)
@@ -9,7 +10,7 @@
 ```c++
 int main() {
   serv::_socket();
-  serv::_setsockopt();
+  serv::_setsockopt(); // 
   serv::_bind();
   serv::_listen();
   serv::_accept();
@@ -17,11 +18,12 @@ int main() {
   return 0;
 }
 ```
--  serv` là `namespace` chứa các hàm `_socket(), _bind(), ... `
+- `serv` là `namespace` chứa các hàm `_socket(), _bind(), ... `
+-  khi ctrl + c nên k ngưng socket lại, hệ thống báo lỗi `address already in use`, hàm `setsockopt` dùng để reuse cái address đó luôn
 
 - cái namespace đó trong thư viện `<tcpsock.h>` 
-- xử lí `thread` trong hàm _accept(), hàm xử lí chính là `conn()`
- ```c++
+- xử lí `thread` trong hàm `_accept()`, hàm xử lí chính là `conn()`
+```c++
    void _accept() {
     while (1) {
   	  if ((clfd = accept(svfd, 0, 0)) > 0) {
@@ -33,3 +35,4 @@ int main() {
   	}
   }
   ```
+# Vài hình ảnh demo
