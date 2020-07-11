@@ -2,7 +2,7 @@
 
 namespace parse {
   auto request(std::istringstream req) {
-  	std::vector<std::string> p;
+    std::vector<std::string> p;
 
     std::string token;
   	while (req >> token) {
@@ -136,7 +136,7 @@ namespace serv {
           return redirect("/info.html");
         }
       }
-      return redirect("/index.html");
+      return redirect("/404.html");
     }
   }
 
