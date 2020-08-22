@@ -3,7 +3,7 @@ SYSTEMDIR=$(CURDIR)/include
 
 EXEC=svtcp
 SOURCE=			src/main.cc 		\
-				src/tcpsock.cc		\
+				    src/tcpsock.cc	\
 
 CC=/usr/bin/gcc
 CXX=/usr/bin/g++
