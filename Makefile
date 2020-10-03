@@ -7,7 +7,7 @@ SOURCE=			src/main.cc 		\
 
 CC=/usr/bin/gcc
 CXX=/usr/bin/g++
-CXXFLAGS=-std=c++14 -pthread -fconcepts
+CXXFLAGS=-std=c++14 -pthread
 
 default: install run
 
